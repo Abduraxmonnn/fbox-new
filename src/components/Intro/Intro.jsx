@@ -1,15 +1,50 @@
-import {images} from "../../constants/index.js";
-import './Intro.scss';
+import {useState, useRef} from "react";
+import "./Intro.scss";
+import {images, videos} from "../../constants/index.js";
 
 const Intro = () => {
+    const [isMuted, setIsMuted] = useState(true);
+    const [isPlaying, setIsPlaying] = useState(true);
+    const videoRef = useRef(null);
+
+    const toggleMute = () => {
+        setIsMuted(!isMuted);
+        videoRef.current.muted = !videoRef.current.muted;
+    };
+
+    const togglePlayPause = () => {
+        if (videoRef.current.paused) {
+            videoRef.current.play();
+            setIsPlaying(true);
+        } else {
+            videoRef.current.pause();
+            setIsPlaying(false);
+        }
+    };
+
     return (
         <section className="left-container intro-section">
-            <div className="intro-container">
-                {/*<img src={images.intro} alt="Intro Section" className="intro-image"/>*/}
-                <div className="intro-text">
-                    <h1>Разработан для самых требовательных</h1>
+            <div className="video-container">
+                <video
+                    ref={videoRef}
+                    className="intro-video"
+                    src={videos.video}
+                    autoPlay
+                    loop
+                    muted={isMuted}
+                />
+
+                <div className="control-buttons">
+                    <button className="video-btn" onClick={togglePlayPause}>
+                        {isPlaying ? "⏸" : "▶️"}
+                    </button>
+                    <button className="video-btn" onClick={toggleMute}>
+                        {isMuted ? "🔇" : "🔊"}
+                    </button>
                 </div>
             </div>
+
+            {/* Partners Carousel */}
             <div className="partners">
                 <div className="carousel">
                     <div className="carousel-track">
