@@ -6,8 +6,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--color-black);
-  margin-top: 4rem;  // to space between header and image
+  background: radial-gradient(circle, #296975 0%, #151419 40%);
+  margin-top: 4rem; // to space between header and image
 }
 
 .intro-container {
@@ -18,16 +18,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.intro-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
 }
 
 .intro-text {
@@ -66,6 +56,7 @@
 }
 
 .partner-logo {
+  mask-image: linear-gradient(to bottom, #151419, #151419);
   flex-shrink: 0;
   width: 200px;
   height: auto;

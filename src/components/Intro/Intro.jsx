@@ -3,11 +3,11 @@ import './Intro.scss';
 
 const Intro = () => {
     return (
-        <section className="intro-section">
+        <section className="left-container intro-section">
             <div className="intro-container">
-                <img src={images.intro} alt="Intro Section" className="intro-image"/>
+                {/*<img src={images.intro} alt="Intro Section" className="intro-image"/>*/}
                 <div className="intro-text">
-                    <h1>IT Software Solution & Technology</h1>
+                    <h1>Разработан для самых требовательных</h1>
                 </div>
             </div>
             <div className="partners">
@@ -20,7 +20,7 @@ const Intro = () => {
                         <img src={images.akfa} alt="Akfa" className="partner-logo"/>
                         <img src={images.angelsDrive} alt="Angels-Drive" className="partner-logo"/>
                         <img src={images.bon} alt="Bon" className="partner-logo"/>
-                        <img src={images.boomCoffee} alt="Boom-Coffee" className="partner-logo"/>
+                        <img src={images.savi} alt="Savi" className="partner-logo"/>
                         <img src={images.duty} alt="Duty" className="partner-logo"/>
                         <img src={images.hyatt} alt="Hyatt" className="partner-logo"/>
                         <img src={images.hyundai} alt="Hyundai" className="partner-logo"/>

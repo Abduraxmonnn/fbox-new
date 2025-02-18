@@ -1,0 +1,135 @@
+.testimonials-section {
+  text-align: center;
+  color: white;
+  padding: 50px 120px;
+
+  .subtitle-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left; // Ensures text stays left
+    gap: 10px;
+    margin-bottom: 18px;
+
+    .line {
+      width: 40px;
+      height: 2px;
+      background-color: #66a3c6;
+    }
+
+    .subtitle {
+      color: #a0a0a0;
+      font-size: 14px;
+    }
+  }
+
+  .title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 60px;
+    text-align: left;
+  }
+
+  .testimonials-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 150px;
+
+    .testimonial-card {
+      background-color: rgba(255, 255, 255, 0.05);
+      border-radius: 10px;
+      padding: 20px;
+      width: 400px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+
+      .testimonial-header {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 15px;
+
+        img {
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+
+        .user-info {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+
+          .name {
+            font-weight: bold;
+            font-size: 16px;
+            color: white;
+          }
+
+          .role {
+            font-size: 14px;
+            color: #a0a0a0;
+          }
+        }
+
+        .social-icons {
+          margin-left: auto;
+          font-size: 16px;
+          display: flex;
+          gap: 10px;
+        }
+      }
+
+      .testimonial-text {
+        font-size: 14px;
+        color: #d0d0d0;
+        margin-bottom: 10px;
+      }
+
+      .rating {
+        font-size: 20px;
+        color: gold;
+      }
+    }
+  }
+
+  .cta-section {
+    height: 291px;
+    background: #66a3c6;
+    border-radius: 15px;
+    padding: 40px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+
+    .cta-text {
+      max-width: 60%;
+
+      h2 {
+        font-size: 39px;
+        font-weight: bold;
+        color: white;
+      }
+    }
+
+    .cta-button {
+      width: 317px;
+      height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 25px;
+      background: black;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      border: none;
+    }
+  }
+}

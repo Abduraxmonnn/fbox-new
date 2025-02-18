@@ -22,18 +22,6 @@ const Header = () => {
                     <li>Pricing</li>
                     <li>Contact</li>
                 </ul>
-
-                <ul className='header-login'>
-                    <li
-                        className='header_sing-in'
-                        onClick={handleSignInClick}
-                        role="button"
-                        tabIndex={0}
-                    >
-                        Sign In
-                    </li>
-                    <li className='header_sing-up'>Get Started Free</li>
-                </ul>
             </div>
         </header>
     );

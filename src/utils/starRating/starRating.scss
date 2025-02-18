@@ -1,0 +1,17 @@
+.stars {
+  display: flex;
+  gap: 4px;
+
+  .star {
+    color: gold;
+    font-size: 18px;
+
+    &.half {
+      color: gold;
+    }
+
+    &.empty {
+      color: gray;
+    }
+  }
+}

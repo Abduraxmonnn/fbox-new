@@ -1,0 +1,54 @@
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4rem;
+  color: white;
+  padding-right: 120px;
+  padding-left: 120px;
+  height: 332px;
+
+  .about-container {
+    flex: 1;
+  }
+
+  .about-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 1rem;
+  }
+
+  .about-line {
+    width: 50px;
+    height: 2px;
+    background-color: #296975;
+  }
+
+  .about-label {
+    font-size: 16px;
+  }
+
+  .about-heading {
+    font-size: 36px;
+    color: white;
+  }
+
+  .about-content {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .divider {
+    width: 2px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+
+  .about-description {
+    font-size: 22px;
+    opacity: 0.8;
+  }
+}

@@ -3,12 +3,12 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-thumb {
-    background: var(--color-v);
+    background: var(--color-paradiso);
     border-radius: 5px;
 }
 
 body::-webkit-scrollbar-track {
-    background: var(--color-w);
+    background: var(--color-white);
 }
 
 .app__bg {

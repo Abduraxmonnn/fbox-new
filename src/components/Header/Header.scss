@@ -43,35 +43,6 @@ li {
   color: var(--color-white);
 }
 
-.header-login {
-  display: flex;
-  margin-right: 50px;
-}
-
-.header_sing-in {
-  margin-right: 20px;
-  font-size: 16px;
-  font-weight: 600;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-}
-
-.header_sing-up {
-  margin-top: 10px;
-  height: 43px;
-  display: flex;
-  padding: 10px 21px;
-  justify-content: center;
-  align-items: center;
-  gap: 37px;
-  border-radius: 160px;
-  background: var(--color-white);
-  color: var(--color-black);
-  cursor: pointer;
-}
-
 .header-links li:after {
   content: '';
   display: block;
@@ -85,12 +56,4 @@ li {
 .header-links li:hover:after {
   width: 100%;
   background: var(--color-v);
-}
-
-.header_sing-in:hover {
-  justify-content: center;
-  align-items: center;
-  gap: 37px;
-  border-radius: 160px;
-  color: var(--color-v);
 }
