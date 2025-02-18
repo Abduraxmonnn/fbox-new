@@ -1,0 +1,17 @@
+body::-webkit-scrollbar {
+    width: 4px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--color-v);
+    border-radius: 5px;
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--color-w);
+}
+
+.app__bg {
+    background-size: cover;
+    background: #fff repeat fixed center;
+}
