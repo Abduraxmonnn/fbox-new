@@ -23,7 +23,7 @@ const Intro = () => {
     };
 
     return (
-        <section className="left-container intro-section">
+        <section id="main" className="left-container intro-section">
             <div className="video-container">
                 <video
                     ref={videoRef}

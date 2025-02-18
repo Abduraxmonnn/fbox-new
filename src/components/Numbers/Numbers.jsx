@@ -2,7 +2,7 @@ import './Numbers.scss'; // Import the SCSS file
 
 const Numbers = () => {
     return (
-        <section className="numbers-section">
+        <section id="work-counters" className="numbers-section">
             <div className="subtitle-container">
                 <span className="line"></span>
                 <p className="subtitle">Work Counters</p>

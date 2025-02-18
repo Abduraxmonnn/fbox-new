@@ -1,12 +1,9 @@
-import './Header.scss';
 import {images} from '../../constants';
-import {useNavigate} from 'react-router-dom';
+import './Header.scss';
 
 const Header = () => {
-    const navigate = useNavigate();
-
-    const handleSignInClick = () => {
-        navigate('/login');
+    const scrollToSection = (id) => {
+        document.getElementById(id)?.scrollIntoView({behavior: 'smooth'});
     };
 
     return (
@@ -18,9 +15,11 @@ const Header = () => {
                 </div>
 
                 <ul className='header-links'>
-                    <li>Home</li>
-                    <li>Pricing</li>
-                    <li>Contact</li>
+                    <li onClick={() => scrollToSection('main')}>Main</li>
+                    <li onClick={() => scrollToSection('services')}>Our Services</li>
+                    <li onClick={() => scrollToSection('work-counters')}>Work Counters</li>
+                    <li onClick={() => scrollToSection('testimonials')}>Testimonials</li>
+                    <li onClick={() => scrollToSection('contacts')}>Contacts</li>
                 </ul>
             </div>
         </header>
