@@ -6,7 +6,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #000;
+  background-color: var(--color-black);
   margin-top: 4rem;  // to space between header and image
 }
 
@@ -48,9 +48,10 @@
 /* Partners Carousel */
 .partners {
   margin-top: 5rem;
+  max-height: 250px;
+  height: 100%;
   width: 100%;
   padding: 2rem 0;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
   overflow: hidden;
 }
 
@@ -66,7 +67,7 @@
 
 .partner-logo {
   flex-shrink: 0;
-  width: 150px;
+  width: 200px;
   height: auto;
   margin: 0 2rem;
   opacity: 0.7;
